@@ -31,13 +31,12 @@ const ConfirmDialog = GObject.registerClass(
       super._init();
 
       let main_box = new St.BoxLayout({
-        vertical: false,
       });
       this.contentLayout.add_child(main_box);
 
       let message_box = new St.BoxLayout({
-        vertical: true,
       });
+      message_box.set_vertical(true);
       main_box.add_child(message_box);
 
       let subject_label = new St.Label({
