@@ -30,12 +30,10 @@ const ConfirmDialog = GObject.registerClass(
     _init(title, desc, ok_label, cancel_label, callback) {
       super._init();
 
-      let main_box = new St.BoxLayout({
-      });
+      let main_box = new St.BoxLayout({});
       this.contentLayout.add_child(main_box);
 
-      let message_box = new St.BoxLayout({
-      });
+      let message_box = new St.BoxLayout({});
       message_box.set_vertical(true);
       main_box.add_child(message_box);
 
